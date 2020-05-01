@@ -1,3 +1,4 @@
+
 1)script  
 script:  
   - docker run USERNAME/docker-react npm run test -- --coverage
