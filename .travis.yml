@@ -8,3 +8,19 @@ script:
     - docker run -e CI=true skete/docker-react npm run test
       
 language: generic 
+
+'''
+deploy:
+    provider: elasticbeanstalk
+    region: <whereever elastic beanstalk instance was created eg:"us-west">
+    app: ""
+    env: ""
+    bucket_name: ""
+    bucket_path: ""
+    on:
+        branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: 
+        secure: $AWS_SECRET_KEY
+'''
+        
