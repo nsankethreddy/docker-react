@@ -1,0 +1,14 @@
+1)script  
+script:  
+  - docker run USERNAME/docker-react npm run test -- --coverage
+
+  instaed of
+
+  script:
+  - docker run -e CI=true USERNAME/docker-react npm run test
+
+2)langauge
+
+language: generic 
+
+
